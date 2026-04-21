@@ -1,0 +1,11 @@
+<a href="https://www.w3schools.com/html/computer.htm">
+  <img src="images/computer.jpg" style="width: 400;">
+</a> 
+
+<a href="https://www.w3schools.com/html/phone.htm">
+  <img src="images/phone.jpg" style="width: 400;">
+</a>
+
+<a href="https://www.w3schools.com/html/coffee.htm">
+  <img src="images/coffee.jpg" style="width: 400;">
+</a>

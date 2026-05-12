@@ -1,62 +1,112 @@
 <!DOCTYPE html>
 <html lang="sk">
 <head>
-  <meta charset="UTF-8">
-  <title>Profesionálni hráči Brawl Stars</title>
+<meta charset="UTF-8">
+<title>Profesionálni hráči Brawl Stars</title>
 
-  <style>
-    body {
-        background-color: #ff69b4;
-        font-family: Arial, sans-serif;
-        color: white;
-    }
+<style>
 
-    h2 {
-        text-align: center;
-    }
+body{
+    background-color:#ff69b4;
+    font-family:Arial,sans-serif;
+    color:white;
+    margin:0;
+}
 
-    .images {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        margin-top: 20px;
-    }
+/* NADPIS */
+h2{
+    text-align:center;
+    font-size:40px;
+    color:yellow;
+    text-shadow:2px 2px 5px black;
+    margin-top:20px;
+}
 
-    .card {
-        text-align: center;
-        border: 2px solid #333;
-        padding: 10px;
-        background-color: #444;
-        border-radius: 10px;
-        width: 220px;
-    }
+/* KARTY */
+.images{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
 
-    img {
-        width: 200px;
-        height: 300px;
-        display: block;
-        margin: 0 auto 10px auto;
-        border-radius: 8px;
-    }
+.card{
+    text-align:center;
+    border:3px solid black;
+    padding:15px;
+    background-color:#444;
+    border-radius:15px;
+    width:220px;
+    box-shadow:0 0 10px black;
+}
 
-    .btn {
-        display: inline-block;
-        padding: 8px 15px;
-        background-color: #2196F3;
-        color: white;
-        text-decoration: none;
-        border-radius: 8px;
-        font-weight: bold;
-    }
+/* MENÁ */
+.card h3{
+    color:#00ffff;
+    font-size:24px;
+}
 
-    .btn:hover {
-        background-color: #1976D2;
-    }
-  </style>
+/* OBRÁZKY */
+img{
+    width:200px;
+    height:300px;
+    border-radius:10px;
+    margin-bottom:10px;
+}
 
+/* TLAČIDLÁ */
+.btn{
+    display:inline-block;
+    padding:10px 18px;
+    background-color:#2196F3;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background-color:#0b63b6;
+    transform:scale(1.05);
+}
+
+/* VIDEO */
+.video-box{
+    text-align:center;
+    margin-top:40px;
+}
+
+.video-box h3{
+    color:yellow;
+    font-size:30px;
+}
+
+/* ODKAZ VLAVO DOLE */
+.footer-link{
+    position:fixed;
+    bottom:10px;
+    left:10px;
+    background-color:black;
+    padding:10px;
+    border-radius:10px;
+}
+
+.footer-link a{
+    color:#00ffcc;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:18px;
+}
+
+.footer-link a:hover{
+    color:yellow;
+}
+
+</style>
 </head>
+
 <body>
 
 <h2>Profesionálni hráči Brawl Stars</h2>
@@ -64,22 +114,26 @@
 <div class="images">
 
     <div class="card">
+        <h3>Jopo</h3>
         <img src="images/jopo.jpg" alt="Jopo">
         <a href="o mne.html" class="btn">O Jopovi</a>
     </div>
 
     <div class="card">
+        <h3>Marko</h3>
         <img src="images/marko.jpg" alt="Marko">
         <a href="o marekovi markovi.html" class="btn">O Markovi</a>
     </div>
 
     <div class="card">
+        <h3>Aďo</h3>
         <img src="images/adko.jpg" alt="Aďo">
         <a href="tekute.html" class="btn">O Aďovi</a>
     </div>
 
 </div>
-<div style="text-align:center; margin-top:30px;">
+
+<div class="video-box">
     <h3>🎬 Guess The Brawler</h3>
 
     <video controls width="400">
@@ -87,15 +141,13 @@
         Tvoj prehliadač nepodporuje video.
     </video>
 </div>
-</body>
-  </body>
-</html>
-<!DOCTYPE html>
-<html>
-<body style="text-align: left;">
-   
-  <div style="border: 2px solid #333; padding: 15px; width: 320px;">
 
-    <a href="https://cs.wikipedia.org/wiki/Brawl_Stars" target="_blank">Brawl Stars</a>
-</html>
+<!-- ODKAZ VLAVO DOLE -->
+<div class="footer-link">
+    <a href="https://cs.wikipedia.org/wiki/Brawl_Stars" target="_blank">
+        Brawl Stars Wiki
+    </a>
+</div>
+
+</body>
 </html>

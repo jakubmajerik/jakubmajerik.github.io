@@ -1,57 +1,114 @@
 <!DOCTYPE html>
 <html lang="sk">
 <head>
-    <meta charset="UTF-8">
-    <title>Jopova stránka</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        img {
-            width: 300px;  
-            height: auto;
-            display: block;
-            margin-bottom: 15px;
-        }
+<meta charset="UTF-8">
+<title>Jopova stránka</title>
 
-        .box {
-            border: 2px solid #333;
-            padding: 15px;
-            width: 320px;
-            text-align: left;
-        }
+<style>
 
-        .buttons {
-            display: flex;
-            justify-content: left;
-            gap: 10px;
-        }
+body{
+    background-color:#ff69b4;
+    font-family:Arial,sans-serif;
+    color:white;
+    margin:0;
+    text-align:center;
+}
 
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #ff69b4;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
-        }
+/* NADPIS */
+h2{
+    color:yellow;
+    font-size:35px;
+    margin-top:30px;
+    text-shadow:2px 2px 5px black;
+}
 
-        .btn:hover {
-            background-color: #e055a1;
-        }
-    </style>
+/* HLAVNÝ BOX */
+.box{
+    border:3px solid black;
+    background-color:#444;
+    border-radius:15px;
+    padding:20px;
+    width:750px;
+    margin:40px auto;
+    display:flex;
+    align-items:center;
+    gap:30px;
+    box-shadow:0 0 15px black;
+}
+
+/* OBRÁZOK */
+.box img{
+    width:300px;
+    height:auto;
+    border-radius:12px;
+    display:block;
+}
+
+/* TEXT */
+.text{
+    flex:1;
+    text-align:left;
+}
+
+.text p{
+    font-size:22px;
+    color:#00ffff;
+    line-height:1.5;
+}
+
+/* TLAČIDLÁ */
+.buttons{
+    margin-top:20px;
+    display:flex;
+    gap:15px;
+}
+
+.btn{
+    display:inline-block;
+    padding:10px 20px;
+    background-color:#2196F3;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background-color:#0b63b6;
+    transform:scale(1.05);
+}
+
+</style>
 </head>
+
 <body>
 
-    <h2>Volám sa Jopo a som vášnivý hráč Brawl Stars. Brawl starts hrávam 7rokov. Môj bratranec má 100Prestige.</h2>
+<h2>⭐ Jopo ⭐</h2>
 
-    <div class="box">
-        <img src="images/jopo.jpg" alt="kakacka">
+<div class="box">
 
+    <!-- OBRÁZOK NAĽAVO -->
+    <img src="images/jopo.jpg" alt="Jopo">
+
+    <!-- TEXT -->
+    <div class="text">
+
+        <p>
+            Volám sa Jopo a som vášnivý hráč Brawl Stars.
+            Brawl Stars hrávam už 7 rokov.
+            Môj bratranec má 100 Prestige 🏆
+        </p>
+
+        <!-- TLAČIDLÁ -->
         <div class="buttons">
             <a href="o marekovi markovi.html" class="btn">Marko</a>
             <a href="index.html" class="btn">Späť</a>
         </div>
+
     </div>
+
+</div>
 
 </body>
 </html>
